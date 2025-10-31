@@ -167,3 +167,9 @@ fun FormLabel(text: String) {
         modifier = Modifier.padding(bottom = 4.dp)
     )
 }
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun RegistrationScreenPreview() {
+    RegistrationScreen()
+}
