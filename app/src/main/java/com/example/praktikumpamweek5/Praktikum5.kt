@@ -96,10 +96,25 @@ fun RegistrationScreen() {
                     )
                     Spacer(modifier = Modifier.height(16.dp))
 
+                    FormLabel(text = stringResource(R.string.label_gender))
+                    Column {
+                        genderOptions.forEach { option ->
+                            RadioButtonOption(
+                                text = option,
+                                selected = selectedGender == option,
+                                onClick = { selectedGender = option }
+                            )
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+@Composable
+fun RadioButtonOption(text: String, selected: Boolean, onClick: () -> Unit) {
+    TODO("Not yet implemented")
 }
 
 @Composable
