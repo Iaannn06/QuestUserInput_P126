@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -82,10 +83,23 @@ fun RegistrationScreen() {
                         .padding(24.dp)
                         .fillMaxWidth()
                 ){
-
+                    FormLabel(text = stringResource(R.string.label_nama))
+                    OutlinedTextField(
+                        value = textNama,
+                        onValueChange = { textNama = it },
+                        placeholder = { Text(stringResource(R.string.placeholder_nama)) }, // <-- MEMANGGIL STRING
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true,
+                        shape = RoundedCornerShape(8.dp)
+                    )
                 }
             }
         }
     }
+}
+
+@Composable
+fun FormLabel(text: String) {
+    TODO("Not yet implemented")
 }
 
