@@ -5,6 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.res.stringArrayResource
 
 @Composable
 fun RegistrationScreen() {
@@ -18,5 +19,7 @@ fun RegistrationScreen() {
     var submittedGender by remember { mutableStateOf("") }
     var submittedStatus by remember { mutableStateOf("") }
 
+    val genderOptions = stringArrayResource(R.array.gender_options)
+    val statusOptions = stringArrayResource(R.array.status_options)
 
 }
