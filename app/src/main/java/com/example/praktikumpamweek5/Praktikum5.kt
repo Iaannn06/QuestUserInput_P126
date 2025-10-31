@@ -133,8 +133,28 @@ fun RegistrationScreen() {
 }
 
 @Composable
-fun RadioButtonOption(text: String, selected: Boolean, onClick: () -> Unit) {
-    TODO("Not yet implemented")
+fun RadioButtonOption(
+    text: String,
+    selected: Boolean,
+    onClick: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .selectable(
+                selected = selected,
+                onClick = onClick
+            )
+            .padding(vertical = 4.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        RadioButton(
+            selected = selected,
+            onClick = onClick
+        )
+        Spacer(modifier = Modifier.width(8.dp))
+        Text(text = text)
+    }
 }
 
 @Composable
