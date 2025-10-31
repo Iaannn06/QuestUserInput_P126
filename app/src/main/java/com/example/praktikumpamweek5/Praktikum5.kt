@@ -159,6 +159,11 @@ fun RadioButtonOption(
 
 @Composable
 fun FormLabel(text: String) {
-    TODO("Not yet implemented")
+    Text(
+        text = text,
+        style = MaterialTheme.typography.labelMedium,
+        fontWeight = FontWeight.Bold,
+        color = Color.Gray,
+        modifier = Modifier.padding(bottom = 4.dp)
+    )
 }
-
