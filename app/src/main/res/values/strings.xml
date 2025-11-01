@@ -1,26 +1,24 @@
 <resources>
     <string name="app_name">PraktikumPamWeek5</string>
     <string name="form_title">Formulir Pendaftaran</string>
-    <string name="label_nama">NAMA LENGKAP</string>
-    <string name="placeholder_nama">Isian nama lengkap</string>
-    <string name="label_gender">JENIS KELAMIN</string>
-    <string name="gender_male">Laki-laki</string>
-    <string name="gender_female">Perempuan</string>
-    <string-array name="gender_options">
-        <item>@string/gender_male</item>
-        <item>@string/gender_female</item>
-    </string-array>
-    <string name="label_status">STATUS PERKAWINAN</string>
-    <string name="status_widow">Janda</string>
-    <string name="status_single">Lajang</string>
-    <string name="status_widower">Duda</string>
-    <string-array name="status_options">
-        <item>@string/status_widow</item>
-        <item>@string/status_single</item>
-        <item>@string/status_widower</item>
-    </string-array>
-    <string name="label_alamat">ALAMAT</string>
-    <string name="placeholder_alamat">Alamat</string>
 
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="placeholder_nama">Isian nama lengkap</string>
+
+    <string name="label_gender">Jenis Kelamin</string>
+    <string-array name="gender_options">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string name="label_status">Status Perkawinan</string>
+    <string-array name="status_options">
+        <item>Janda</item>
+        <item>Lajang</item>
+        <item>Duda</item>
+    </string-array>
+
+    <string name="label_alamat">Alamat</string>
+    <string name="placeholder_alamat">Alamat</string>
     <string name="button_submit">Submit</string>
 </resources>
